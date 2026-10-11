@@ -1,10 +1,13 @@
 #include<stdio.h>
 #include<windows.h>
 
-int a, b;
+float a, b;
 
 void print(){
-    printf("%d + %d = %d", a, b, a + b);
+    printf("SOMA: %.2f + %.2f = %.2f\n", a, b, a + b);
+    printf("SUBTRAÇÃO: %.2f - %.2f = %.2f\n", a, b, a - b);
+    printf("MULTIPLICAÇÃO: %.2f x %.2f = %.2f\n", a, b, a * b);
+    printf("DIVISÃO: %.2f / %.2f = %.2f\n", a, b, a / b);
 }
 
 int main(){
@@ -12,13 +15,13 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-printf("---SOMA---\n");
+printf("---CALCULADORA MULTIUSO---\n");
 
 printf("Digite o primeiro número da soma: ");
-scanf("%d", &a);
+scanf("%f", &a);
 
 printf("Digite o segundo número da soma: ");
-scanf("%d", &b);
+scanf("%f", &b);
 
 print();
 

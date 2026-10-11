@@ -2,9 +2,9 @@
 #include<windows.h>
 
 
-void contador(int limite){
+void tabuada(int limite){
     for(int i = 1; i <= limite; i++){
-         printf("%d\n", i);
+         printf("%d x %d = %d\n", limite, i, limite * i);
     }
     
 }
@@ -15,10 +15,10 @@ SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 int n;
 
-printf("Digite um número para o contador: ");
+printf("Digite um número para ver sua tabuada: ");
 scanf("%d", &n);
 
-contador(n);
+tabuada(n);
 
     return 0;
 }

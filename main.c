@@ -1,12 +1,15 @@
 #include<stdio.h>
 #include<windows.h>
 
-char nome[20];
+int num;
 
-void saudacao(){
-    printf("Olá %s, seja bem vindo!", nome);
+void par(){
+    if(num % 2 == 0){
+        printf("Seu número é par");
+    }else{
+        printf("Seu número é impar");
+    }
 }
-
 
 
 int main(){
@@ -14,16 +17,11 @@ int main(){
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 
-printf("---DIGITE SEU NOME---\n");
-printf("Username: ");
-scanf("%s", nome);
+printf("---PAR OU IMPAR?---\n");
+printf("Digite um número: ");
+scanf("%d", &num);
 
-saudacao();
-
-
-
-
-
+par();
 
     return 0;
 }

@@ -10,6 +10,8 @@ float media(float primeiro, float segundo, float terceiro){
 void aprovado(float nota){
     if(nota >= 6){
         printf("Parabéns você foi aprovado!!!");
+    }else if(nota >= 4){
+        printf("Você está de recuperação!!");
     }else{
         printf("Poxa, você foi reprovado :(");
     }

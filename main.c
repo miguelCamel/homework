@@ -2,23 +2,20 @@
 #include<windows.h>
 
 
-void tabuada(int limite){
-    for(int i = 1; i <= limite; i++){
-         printf("%d x %d = %d\n", limite, i, limite * i);
-    }
+int soma(int limite){
+    for(int i = 1; i <= limite; i++)
+        return i + limite;
     
 }
-
 int main(){
 
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
 int n;
 
-printf("Digite um número para ver sua tabuada: ");
+printf("Digite o número da soma do limite: ");
 scanf("%d", &n);
 
-tabuada(n);
-
+printf("%d", soma(n));
     return 0;
 }

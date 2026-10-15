@@ -1,12 +1,13 @@
 #include<iostream>
 #include<windows.h>
+#include<string>
 
 
 int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
 
-char nome[50];
+std::string nome;
 int idade;
 
 std::cout<< "Digite seu nome: "<<std::endl;

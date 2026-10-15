@@ -11,11 +11,16 @@ int main(){
 
 SetConsoleOutputCP(65001);
 SetConsoleCP(65001);
-int n;
 
-printf("Digite o número da soma do limite: ");
-scanf("%d", &n);
+char nome[50];
+int idade;
 
-printf("%d", soma(n));
+printf("Digite seu nome: ");
+scanf("%s", nome);
+
+printf("Digite sua idade: ");
+scanf("%d", &idade);
+
+printf("Olá %s você tem %d anos", nome, idade);
     return 0;
 }

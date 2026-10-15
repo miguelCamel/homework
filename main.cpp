@@ -7,17 +7,16 @@ int main(){
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
 
-std::string nome;
-int idade;
+int numero;
 
-std::cout<< "Digite seu nome: "<<std::endl;
-std::cin >> nome;
+std::cout<< "Digite um número e descubro se ele é par ou impar:  "<<std::endl;
+std::cin >> numero;
 
-std::cout<< "Digite sua idade: "<<std::endl;
-std::cin >> idade;
-
-std::cout<< "Olá" <<" " << nome << " " << "você tem" << " " << idade << " " << "anos!"<<std::endl; 
-
+if(numero % 2 == 0){
+    std::cout<< "Seu número é par!"<<std::endl;
+}else{
+    std::cout<< "Seu número é impar"<<std::endl;
+}
 
 
 
